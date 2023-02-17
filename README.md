@@ -38,30 +38,26 @@ The each of these is just an ar scope with the table-name qualified field,
 "LIKE" and the string entered.
 
 Other searchable methods are:
-    searchable_date_range(*args)
-    searchable_date_from(*args)
-    searchable_date_to(*args)
-    searchable_date(*args)
-    searchable_numeric(*args)
-    searchable_numeric_range(*args)
-    searchable_numeric_from(*args)
-    searchable_numeric_to(*args)
-    searchable_string_like(*args)
-    searchable_phone_number(*args)
-    searchable_postal_code(*args)
 
-These will create the similarly named methods
+* searchable_date_range(*args)
+* searchable_date_from(*args)
+* searchable_date_to(*args)
+* searchable_date(*args)
+* searchable_numeric(*args)
+* searchable_numeric_range(*args)
+* searchable_numeric_from(*args)
+* searchable_numeric_to(*args)
+* searchable_string_like(*args)
+* searchable_phone_number(*args)
+* searchable_postal_code(*args)
+
+These will create the similarly named methods:
+```
     by_date_range(from_date, to_date)
     by_date_from(from_date)
-    by_date_to(to_date)
-    by_date(date)
-    by_numeric(numeric)
-    by_numeric_range(from_numeric, to_numeric)
-    by_numeric_from(from_numeric)
-    by_numeric_to(to_numeric)
-    by_string_like(string)
-    by_phone_number(phone_number)
-    by_postal_code(postal_code)
+```
+etc.
+
 ## Development
 
 After checking out the repo, run `bundle` to install dependencies. Then, run `rspec` to run the tests.
