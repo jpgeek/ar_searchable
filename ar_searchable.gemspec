@@ -27,7 +27,6 @@ Gem::Specification.new do |spec|
     #Dir["{lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
   end
 
-  spec.add_dependency "rails", ">= 7.0.4.2"
-  spec.add_development_dependency "rspec-rails"
-  spec.add_development_dependency "debug"
+  spec.add_runtime_dependency 'rails', '~> 7.0', '>= 7.0.4.2'
+  spec.add_development_dependency "rspec-rails", '~> 6.0'
 end

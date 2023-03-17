@@ -1,9 +1,8 @@
 PATH
   remote: .
   specs:
-    ar_searchable (0.1.0)
-      debug
-      rails (>= 7.0.4.2)
+    ar_searchable (0.1.1)
+      rails (~> 7.0, >= 7.0.4.2)
 
 GEM
   remote: https://rubygems.org/
@@ -179,7 +178,7 @@ PLATFORMS
 DEPENDENCIES
   ar_searchable!
   debug (>= 1.0.0)
-  rspec-rails
+  rspec-rails (~> 6.0)
   sqlite3
 
 BUNDLED WITH
