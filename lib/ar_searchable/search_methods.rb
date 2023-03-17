@@ -1,5 +1,4 @@
 module ArSearchable
-
   def self.included(base)
     unless base.class_variable_defined?(:@@searchable_methods)
       base.class_variable_set(:@@searchable_methods, [])

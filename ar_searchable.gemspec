@@ -8,8 +8,10 @@ Gem::Specification.new do |spec|
   spec.summary = "A simple, non-intrusive ActiveRecord search concern"
   spec.description = "Adds numeric, date, string and other scopes only when specified."
   spec.homepage = "https://github.com/jpgeek/ar_searchable"
-    spec.license     = "MIT"
-  
+  spec.license     = "MIT"
+
+  spec.require_paths = ["lib"]
+
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the
   # "allowed_push_host" to allow pushing to a single host or delete this
   # section to allow pushing to any host.
@@ -19,8 +21,10 @@ Gem::Specification.new do |spec|
   spec.metadata["source_code_uri"] = spec.homepage
   spec.metadata["changelog_uri"] = spec.homepage
 
+  # spec.files        = Dir['{lib/**/*,[A-Z]*}']
   spec.files = Dir.chdir(File.expand_path(__dir__)) do
     Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
+    #Dir["{lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
   end
 
   spec.add_dependency "rails", ">= 7.0.4.2"

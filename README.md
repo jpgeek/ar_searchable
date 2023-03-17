@@ -1,4 +1,5 @@
 # ArSearchable
+see: turbo-rails gem for how to architect the loading/ engine/ geminess.
 
 Add scopes to Active Record models.
 
